@@ -16,9 +16,6 @@ function library:CreateWindow(name)
 	local mainCorner_2 = Instance.new("UICorner")
 	ScreenGui.Name = "BoondieSppon"
 	ScreenGui.Parent = game.CoreGui
-	if game.CoreGui:FindFirstChild("ScreenGui") then
-		game.CoreGui:FindFirstChild("ScreenGui"):Destroy()
-	end
 
 	MainGui.Name = "MainGui"
 	MainGui.Parent = ScreenGui
