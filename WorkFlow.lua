@@ -25,6 +25,8 @@ function library:CreateWindow(name)
 	MainGui.BackgroundColor3 = Color3.fromRGB(45, 48, 53)
 	MainGui.Position = UDim2.new(0.35022223, 0, 0.282051295, 0)
 	MainGui.Size = UDim2.new(0, 387, 0, 308)
+	MainGui.Active = true
+	MainGui.Draggable = true
 
 	GuiName.Name = "GuiName"
 	GuiName.Parent = MainGui
