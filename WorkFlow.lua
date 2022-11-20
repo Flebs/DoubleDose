@@ -16,6 +16,9 @@ function library:CreateWindow(name)
 	local mainCorner_2 = Instance.new("UICorner")
 	ScreenGui.Name = "BoondieSppon"
 	ScreenGui.Parent = game.CoreGui
+	if game.CoreGui:FindFirstChild("ScreenGui") then
+		game.CoreGui:FindFirstChild("ScreenGui"):Destroy()
+	end
 
 	MainGui.Name = "MainGui"
 	MainGui.Parent = ScreenGui
@@ -235,14 +238,3 @@ function library:CreateWindow(name)
 	end
 	return TabHandler
 end
---[[
-local l = library:CreateWindow("Hack App")
-local Tab1 = l:CreateTab("Hack Player 1")
-local Tab2 = l:CreateTab("Puta")
-Tab1:CreateButton("Button", function()
-	print("hi")
-end)
-Tab1:CreateButton("Button", function()
-	print("123")
-end)
-Tab2:CreateButton("Button 2")]]
